@@ -68,7 +68,7 @@ html {
 }
 
 body {
-    font-family: var(--font-body);
+    font-family: var(--font-body), sans-serif;
     background: var(--gradient-bg);
     color: var(--text-primary);
     line-height: 1.7;
@@ -114,7 +114,7 @@ img {
 }
 
 .section__title-text {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-weight: 700;
     background: var(--gradient-primary);
@@ -139,7 +139,7 @@ img {
     gap: 10px;
     padding: 14px 32px;
     border-radius: var(--radius-full);
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
@@ -163,7 +163,7 @@ img {
 .btn--outline {
     background: transparent;
     color: var(--text-primary);
-    border: 1.5px solid var(--border-hover);
+    border: 2px solid var(--border-hover);
 }
 
 .btn--outline:hover {
@@ -210,7 +210,7 @@ img {
 }
 
 .navbar__logo {
-    font-family: var(--font-mono);
+    font-family: var(--font-mono), monospace;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -231,7 +231,7 @@ img {
 }
 
 .navbar__link {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-secondary);
@@ -331,18 +331,18 @@ img {
 }
 
 .hero__greeting {
-    font-family: var(--font-mono);
+    font-family: var(--font-mono), monospace;
     color: var(--accent-blue);
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 12px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards 0.2s;
 }
 
 .hero__name {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: clamp(2.8rem, 7vw, 4.5rem);
     font-weight: 800;
     background: var(--gradient-primary);
@@ -356,7 +356,7 @@ img {
 }
 
 .hero__subtitle {
-    font-family: var(--font-mono);
+    font-family: var(--font-mono), monospace;
     font-size: clamp(1rem, 2.5vw, 1.3rem);
     color: var(--text-secondary);
     margin-bottom: 24px;
@@ -427,7 +427,7 @@ img {
 }
 
 .hero__scroll-indicator span {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 0.75rem;
     color: var(--text-muted);
     letter-spacing: 1px;
@@ -507,7 +507,7 @@ img {
 }
 
 .about__stat-number {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 2.2rem;
     font-weight: 800;
     background: var(--gradient-primary);
@@ -517,7 +517,7 @@ img {
 }
 
 .about__stat-plus {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
     background: var(--gradient-primary);
@@ -533,7 +533,7 @@ img {
     font-weight: 500;
     margin-top: 4px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 /* ========================================
@@ -635,7 +635,7 @@ img {
 }
 
 .skill-card__title {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -739,7 +739,7 @@ img {
     padding: 4px 12px;
     background: rgba(59, 130, 246, 0.2);
     color: var(--accent-blue);
-    font-family: var(--font-mono);
+    font-family: var(--font-mono), monospace;
     font-size: 0.72rem;
     font-weight: 500;
     border-radius: var(--radius-full);
@@ -751,7 +751,7 @@ img {
 }
 
 .project-card__title {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 1.15rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -771,7 +771,7 @@ img {
 }
 
 .project-card__link {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--accent-blue);
@@ -846,7 +846,7 @@ img {
 }
 
 .contact__card-title {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     font-size: 1rem;
     font-weight: 700;
     color: var(--text-primary);
