@@ -4,61 +4,317 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed's Portfolio</title>
+    <meta name="description" content="Ahmed Magdy - Engineering student at Cairo University & Junior Web Developer. View my portfolio, skills, and projects.">
+    <title>Ahmed Magdy | Portfolio</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="Portfolio.css">
 </head>
 
 <body>
 
-<button class="skills">Skills</button>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="navbar__logo">
+            <span class="navbar__logo-bracket">&lt;</span>AM<span class="navbar__logo-bracket">/&gt;</span>
+        </a>
+        <ul class="navbar__links">
+            <li><a href="#hero" class="navbar__link active">Home</a></li>
+            <li><a href="#about" class="navbar__link">About</a></li>
+            <li><a href="#skills" class="navbar__link">Skills</a></li>
+            <li><a href="#projects" class="navbar__link">Projects</a></li>
+            <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+        <button class="navbar__menu-btn" id="menuBtn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
 
-<div class="all hide" >
-    <div class="skill-card">
-        <header class="skill-card__header"><img class="skill-card__icon" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5 Logo"/></header>
-        <section class="skill-card__body">
-            <h2 class="skill-card__title">html</h2>
-            <ul class="skill-card__knowledge">
-                <li>HTML5</li>
-                <li>Semantics</li>
-                <li>SVG</li>
-                <li>Canvas</li>
-            </ul>
+    <main>
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero">
+            <div class="hero__bg-shapes">
+                <div class="hero__shape hero__shape--1"></div>
+                <div class="hero__shape hero__shape--2"></div>
+                <div class="hero__shape hero__shape--3"></div>
+            </div>
+            <div class="hero__content">
+                <p class="hero__greeting">Hi there, I'm</p>
+                <h1 class="hero__name">Ahmed Magdy</h1>
+                <div class="hero__subtitle">
+                    <span class="hero__subtitle-static">I'm a </span>
+                    <span class="hero__subtitle-typed" id="typedText"></span>
+                    <span class="hero__cursor">|</span>
+                </div>
+                <p class="hero__description">
+                    Engineering student at Cairo University, passionate about building
+                    beautiful and functional web experiences.
+                </p>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary">
+                        <i class="fas fa-paper-plane"></i> Get in Touch
+                    </a>
+                    <a href="#projects" class="btn btn--outline">
+                        <i class="fas fa-eye"></i> View Projects
+                    </a>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <div class="hero__scroll-mouse">
+                    <div class="hero__scroll-wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
         </section>
-    </div>
 
-    <div class="skill-card2">
-        <header class="skill-card__header2"><img class="skill-card__icon2" src="css-icon.svg" alt="HTML5 Logo"/></header>
-        <section class="skill-card__body2">
-            <h2 class="skill-card__title2">CSS</h2>
-            <ul class="skill-card__knowledge2">
-                <li>CSS</li>
-                <li>Styling</li>
-                <li>Positioning</li>
-            </ul>
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="about" id="about">
+            <div class="section__container">
+                <h2 class="section__title reveal">
+                    <span class="section__title-text">About Me</span>
+                    <span class="section__title-line"></span>
+                </h2>
+                <div class="about__content reveal">
+                    <div class="about__info">
+                        <p class="about__text">
+                            I'm <strong>Ahmed Magdy Ahmed Hassan</strong>, an Engineering student at
+                            <strong>Cairo University</strong> with a strong passion for web development.
+                            I love turning ideas into real, interactive web applications using modern technologies.
+                        </p>
+                        <p class="about__text">
+                            I'm a Junior Web Developer actively seeking opportunities to grow and contribute
+                            to exciting projects. I believe in writing clean, maintainable code and creating
+                            user-friendly interfaces.
+                        </p>
+                        <div class="about__stats">
+                            <div class="about__stat">
+                                <span class="about__stat-number" data-target="3">0</span><span class="about__stat-plus">+</span>
+                                <span class="about__stat-label">Skills</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number" data-target="10">0</span><span class="about__stat-plus">+</span>
+                                <span class="about__stat-label">Projects</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number" data-target="1">0</span><span class="about__stat-plus">+</span>
+                                <span class="about__stat-label">Years Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </div>
 
-    <div class="skill-card3">
-        <header class="skill-card__header3"><img class="skill-card__icon3" src="javascript-logo-svgrepo-com.svg" alt="HTML5 Logo"/></header>
-        <section class="skill-card__body3">
-            <h2 class="skill-card__title3">Javascript</h2>
-            <ul class="skill-card__knowledge3">
-                <li>JavaScript</li>
-                <li>Functions</li>
-                <li>Loops</li>
-                <li>Conditions</li>
-            </ul>
+        <!-- ===== SKILLS SECTION ===== -->
+        <section class="skills" id="skills">
+            <div class="section__container">
+                <h2 class="section__title reveal">
+                    <span class="section__title-text">My Skills</span>
+                    <span class="section__title-line"></span>
+                </h2>
+                <div class="skills__grid reveal">
+
+                    <div class="skill-card" data-color="#E34F26">
+                        <div class="skill-card__glow"></div>
+                        <header class="skill-card__header">
+                            <img class="skill-card__icon" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5 Logo">
+                        </header>
+                        <section class="skill-card__body">
+                            <h3 class="skill-card__title">HTML5</h3>
+                            <ul class="skill-card__knowledge">
+                                <li>Semantic Markup</li>
+                                <li>Forms & Validation</li>
+                                <li>SVG & Canvas</li>
+                                <li>Accessibility</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="skill-card" data-color="#2965F1">
+                        <div class="skill-card__glow"></div>
+                        <header class="skill-card__header">
+                            <img class="skill-card__icon" src="css-icon.svg" alt="CSS3 Logo">
+                        </header>
+                        <section class="skill-card__body">
+                            <h3 class="skill-card__title">CSS3</h3>
+                            <ul class="skill-card__knowledge">
+                                <li>Flexbox & Grid</li>
+                                <li>Animations</li>
+                                <li>Responsive Design</li>
+                                <li>Modern Layouts</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="skill-card" data-color="#F7DF1E">
+                        <div class="skill-card__glow"></div>
+                        <header class="skill-card__header">
+                            <img class="skill-card__icon" src="javascript-logo-svgrepo-com.svg" alt="JavaScript Logo">
+                        </header>
+                        <section class="skill-card__body">
+                            <h3 class="skill-card__title">JavaScript</h3>
+                            <ul class="skill-card__knowledge">
+                                <li>ES6+ Features</li>
+                                <li>DOM Manipulation</li>
+                                <li>Async Programming</li>
+                                <li>APIs & Fetch</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
         </section>
-    </div>
-</div>
 
-<script src="portfolio.js"></script>
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section class="projects" id="projects">
+            <div class="section__container">
+                <h2 class="section__title reveal">
+                    <span class="section__title-text">My Projects</span>
+                    <span class="section__title-line"></span>
+                </h2>
+                <div class="projects__grid reveal">
+
+                    <div class="project-card">
+                        <div class="project-card__overlay">
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">HTML</span>
+                                <span class="project-card__tag">CSS</span>
+                                <span class="project-card__tag">JS</span>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Portfolio Website</h3>
+                            <p class="project-card__desc">
+                                My personal portfolio website showcasing my skills and projects,
+                                built with modern HTML, CSS, and JavaScript.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-card__link">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__overlay">
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">HTML</span>
+                                <span class="project-card__tag">CSS</span>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Coming Soon</h3>
+                            <p class="project-card__desc">
+                                More exciting projects are on the way. Stay tuned for upcoming
+                                web applications and creative experiments.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">
+                                    <i class="fas fa-clock"></i> In Progress
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__overlay">
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">JS</span>
+                                <span class="project-card__tag">API</span>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Coming Soon</h3>
+                            <p class="project-card__desc">
+                                A new project exploring JavaScript APIs and interactive features.
+                                Check back soon for updates!
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">
+                                    <i class="fas fa-clock"></i> In Progress
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact" id="contact">
+            <div class="section__container">
+                <h2 class="section__title reveal">
+                    <span class="section__title-text">Get in Touch</span>
+                    <span class="section__title-line"></span>
+                </h2>
+                <div class="contact__content reveal">
+                    <p class="contact__text">
+                        I'm currently available for freelance work and open to new opportunities.
+                        Feel free to reach out if you have a project in mind or just want to connect!
+                    </p>
+                    <div class="contact__cards">
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="contact__card-title">Email</h3>
+                            <p class="contact__card-info">ahmed@example.com</p>
+                        </div>
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="contact__card-title">Location</h3>
+                            <p class="contact__card-info">Cairo, Egypt</p>
+                        </div>
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="contact__card-title">University</h3>
+                            <p class="contact__card-info">Cairo University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__socials">
+                <a href="#" class="footer__social" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="footer__social" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="footer__social" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+            <p class="footer__copy">
+                &copy; 2026 Ahmed Magdy. Built with <i class="fas fa-heart" style="color: #ef4444;"></i> and code.
+            </p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
 </body>
 </html>
